@@ -3,10 +3,11 @@
         $connectionInfo = array( "UID"=>"sa", "PWD"=>"1234", "Database"=>"RSLANGSA");
         $conn = sqlsrv_connect( $serverName, $connectionInfo);
         if( $conn === false ){
-        echo "Koneksi gagal</br>";
+                echo "Koneksi gagal</br>";
         die( print_r( sqlsrv_errors(), true));
-        }else{
-        echo "Koneksi berhasil";
+        }
+        else{
+                echo "Koneksi berhasil";
         }
         sqlsrv_close( $conn);
         ?>
